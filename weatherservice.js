@@ -11,17 +11,7 @@ class WeatherService {
       return new WeatherForecast(date, temp, summary);
     }
   
-    static getSummary(temp) {
-      if (temp > 40) {
-        return "Scorching";
-      } else if (temp > 30) {
-        return "Hot";
-      } else if (temp > 20) {
-        return "Warm";
-      } else if (temp > 10) {
-        return "Mild";
-      } else if (temp > 0) {
-        return "Cool";
+    s
       } else if (temp > -10) {
         return "Chilly";
       } else if (temp > -20) {
@@ -38,14 +28,13 @@ class WeatherService {
   
   class WeatherForecast {
     constructor(date, temperatureC, summary) {
-      this.date = date;
+      
       this.temperatureC = temperatureC;
       this.summary = summary;
     }
   
     get temperatureF() {
-      return 32 + Math.round(this.temperatureC / 0.5556);
-    }
+
 }
 
 module.exports = { WeatherService, WeatherForecast };
