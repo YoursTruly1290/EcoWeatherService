@@ -6,10 +6,7 @@ class WeatherService {
     }
   
     static getForecastForDate(date) {
-      const temp = WeatherService.getRandomInt(-30, 55);
-      const summary = WeatherService.getSummary(temp);
-      return new WeatherForecast(date, temp, summary);
-    }
+      
   
     static getSummary(temp) {
     
@@ -24,7 +21,7 @@ class WeatherService {
     }
   
     static getRandomInt(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
+      
     }
   }
   
